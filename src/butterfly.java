@@ -2,7 +2,7 @@ import java.util.*;
 class butterfly{
     static void pattern(){
         Scanner input=new Scanner(System.in);
-        System.out.print("Enter a number:");
+        System.out.print("-----BUTTERFLY-----\nEnter rows:");
         int n=input.nextInt();
         for(int i=1;i<=n;i++){
             for(int j=1;j<=i;j++){
