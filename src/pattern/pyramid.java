@@ -1,18 +1,17 @@
+package pattern;
 import java.util.*;
-class rhombus{
+class pyramid {
     static void pattern() {
         Scanner input=new Scanner(System.in);
-        System.out.print("-----RHOMBUS-----\nEnter rows:");
+        System.out.print("-----PYRAMID-----\nEnter rows:");
         int n=input.nextInt();
-        int n2=n;
         for(int i=1;i<=n;i++){
-            for(int j=n2-1;j>=1;j--){
+            for(int j=1;j<=n-i;j++){
                 System.out.print(" ");
             }
-            for (int j=1;j<=n;j++){
-                System.out.print("*");
+            for (int j=1;j<=i;j++){
+                System.out.print(i+" ");
             }
-            n2--;
             System.out.println();
         }
     }
